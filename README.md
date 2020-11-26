@@ -1,2 +1,2 @@
-# noroff
-This is readme
+# Noroff
+Repository created for Noroff deliveries.
