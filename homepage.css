@@ -1,0 +1,122 @@
+/* MAIN  HOMEPAGE */
+
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 85%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main h1{
+    font-size: 38px;
+    padding: 60px 0px 40px 0px;
+    text-align: center;
+    color: #1D2540;
+}
+
+.boxes-homepage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    justify-items: center;
+}
+
+.boxes-homepage img{
+    width: 336px;
+    height: 210px;
+}
+
+/* NEWSLETTER */
+
+.newsletter-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.newsletter{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    width: 40em;
+    height: 10em;
+    background: #1D2540;
+    margin-left: 50px;
+    margin-right: 100px;
+    color: white;
+    text-align: center;
+}
+
+.newsletter input{
+    font-size: 20px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 6px 75px 6px 40px;
+    width: 50%;
+    min-width: 300px;
+}
+
+.newsletter h2, p{
+    margin-top: 10px;
+}
+
+.newsletter p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.newsletter h2{
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.exclamation{
+    color: #1D2540;
+    font-size: 80px;
+}
+
+/* Homepage Dekstop Menu */
+@media all and (max-width: 1300px) {
+    .exclamation{
+        display: none;
+    }
+
+    .boxes-homepage{
+        grid-template-columns: 1fr 1fr;
+    }
+    .box1, .box2, .box3{
+        margin: 15px;
+    }
+}
+
+/* Homepage Tablet Menu */
+@media all and (max-width: 800px) {
+    .boxes-homepage{
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter p{
+        font-size: 14px;
+    }
+    
+    .newsletter h2{
+        font-size: 24px;
+    }
+
+    .newsletter{
+        height: 15em;
+    }
+
+    .newsletter-container{
+        margin-left: 26px;
+    }
+}

@@ -1,0 +1,64 @@
+.seller img{
+    height: 100px;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+
+.product{
+    grid-area: product;
+    margin: 40px;
+    width: 400px;
+
+}
+
+.big{
+    height: 400px;
+}
+
+.small{
+    height: 130px;
+}
+
+.prodname{
+    grid-area: prodname;
+    margin: 40px;
+}
+
+.prodname h1, h2, p, button{
+    margin: 5px;
+}
+
+.details{
+    grid-area: details;
+    margin: 40px;
+}
+
+.details a{
+    color: blue;
+    float: right;
+}
+
+.seller{
+    grid-area: seller;
+    margin: 40px;
+}
+
+main{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-rows: 2fr 2fr 0.5fr;
+    grid-template-areas: 
+        "product prodname seller"
+        "product details details";
+}
+
+@media (max-width: 1100px){
+    main{
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: 
+        "product product"
+        "prodname seller"
+        "details details";
+    }
+
+}

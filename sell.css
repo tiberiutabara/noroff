@@ -1,0 +1,58 @@
+.sellbox1, .sellbox2, .sellbox3, .sellbox4{
+    margin: 50px;
+}
+
+.sellbox1 img{
+    height: 30em;
+}
+
+.sellboxes h1,h2{
+    color: #020659;
+}
+
+.sellbox1{
+    grid-area: a;
+}
+
+.sellbox2{
+    grid-area: b;
+}
+
+.sellbox3{
+    grid-area: c;
+}
+
+.sellbox4{
+    grid-area: d;
+}
+
+.sellboxes{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "a b b b"
+    "a c c d";
+}
+
+@media (max-width: 1100px){
+    .sellboxes{ 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "a b"
+        "c d";
+    }
+}
+
+@media (max-width: 800px){
+    .sellboxes{ 
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d";
+    }
+}

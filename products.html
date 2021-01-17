@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GameHub | Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+    <script src="https://kit.fontawesome.com/6da040c6a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="index.html"><img src="img/GameHub_Logo.png" alt="logo"></a></li>
+            <li class="item"><a href="deals.html">Deals</a></li>
+            <li class="item"><a href="sell.html">Sell</a></li>
+            <li class="item"><a href="blog.html">Blog</a></li>
+            <li class="item"><a href="contact.html">Contact</a></li>
+            </li>
+            <li class="item"><input type="text" placeholder="Search"><a href="products.html"><i class="fas fa-search"></a></i></li>
+            <li class="item button cart"><a href="checkout.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <li class="item button"><a href="signin.html">Sign in</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <main>
+            <div class="filter">
+                <a href="#">Change view <i class="fas fa-th"></i></a> 
+                <a>Filter results <i class="fas fa-filter"></i></a>
+            </div> 
+
+            <div class="products">
+            <div class="product">
+                <a href="productpage.html"><img src="img/product.jpg" alt="product"></a>
+                <p>Game name</p>
+                <p>Oslo - 15 nov 20</p>
+            </div>
+            <div class="product">
+                <a href="productpage.html"><img src="img/product.jpg" alt="product"></a>
+                <p>Game name</p>
+                <p>Oslo - 15 nov 20</p>
+            </div>
+            <div class="product">
+                <a href="productpage.html"><img src="img/product.jpg" alt="product"></a>
+                <p>Game name</p>
+                <p>Oslo - 15 nov 20</p>
+            </div>
+            <div class="product">
+                <a href="productpage.html"><img src="img/product.jpg" alt="product"></a>
+                <p>Game name</p>
+                <p>Oslo - 15 nov 20</p>
+            </div>
+            <div class="product">
+                <a href="productpage.html"><img src="img/product.jpg" alt="product"></a>
+                <p>Game name</p>
+                <p>Oslo - 15 nov 20</p>
+            </div>
+            <div class="product">
+                <a href="productpage.html"><img src="img/product.jpg" alt="product"></a>
+                <p>Game name</p>
+                <p>Oslo - 15 nov 20</p>
+            </div>
+            <div class="product">
+                <a href="productpage.html"><img src="img/product.jpg" alt="product"></a>
+                <p>Game name</p>
+                <p>Oslo - 15 nov 20</p>
+            </div>
+            <div class="product">
+                <a href="productpage.html"><img src="img/product.jpg" alt="product"></a>
+                <p>Game name</p>
+                <p>Oslo - 15 nov 20</p>
+            </div>
+            <div class="product">
+                <a href="productpage.html"><img src="img/product.jpg" alt="product"></a>
+                <p>Game name</p>
+                <p>Oslo - 15 nov 20</p>
+            </div>
+            </div>
+
+            <div class="nextpage">
+                <a href="#">Previous</a> <a href="#">Next page</a>
+            </div>
+        </main>
+    </div>
+
+<div class="footer-container">
+    <footer>
+        <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Become partner</a></li>
+            <li><a href="#">Find us here</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Promote your brand</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Chat 24/7</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Telephone</a></li>
+        </ul>
+
+        <p>Copyright license &copy; Game Hub 2020</p>
+    </footer>
+    </div>
+
+</body>
+</html>

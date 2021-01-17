@@ -1,0 +1,54 @@
+.info{
+    margin: 50px;
+}
+
+.info a, p{
+    display: block;
+    margin-bottom: 8px;
+}
+
+h1{
+    color: #1D2540;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form{
+    background-color: #1D2540;
+    font-size: 34px;
+    padding: 15px;
+    width: 70%;
+    margin: 25px auto;
+}
+
+form button{
+    margin-left: 20%;
+}
+
+textarea{
+    font-size: 22px;
+    margin: 20px;
+    max-width: 90%;
+    padding: 3px;
+}
+
+.title{
+    font-size: 22px;
+    padding: 3px;
+    margin: 20px;
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+.email{
+    font-size: 22px;
+    padding: 3px;
+    margin: 20px;
+    margin-bottom: 5px;
+    max-width: 90%;
+}
+
+.title, button{
+    display: inline;
+}
+

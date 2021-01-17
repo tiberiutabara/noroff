@@ -1,0 +1,40 @@
+.dealcard1, .dealcard2, .dealcard3{
+    margin: 25px;
+    margin-right: 0px;
+}
+
+.dealcard1 img, .dealcard2 img, .dealcard3 img{
+    width: 100%;
+    height: auto;
+}
+
+.dealcard1{
+    grid-area: a;
+}
+
+.dealcard2{
+    grid-area: b;
+}
+
+.dealcard3{
+    grid-area: c;
+}
+
+.dealcards{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "a a"
+    "b c";
+}
+
+@media (max-width: 800px){
+    .dealcards{ 
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";
+    }
+}

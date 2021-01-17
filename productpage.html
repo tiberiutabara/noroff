@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GameHub | Homepage</title>
+    <title>GameHub | Product page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="productpage.css">
     <script
     src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
@@ -41,42 +41,37 @@
         </ul>
     </nav>
 
-    <div class="main-container">
+<div class="main-container">
     <main>
-        <h1>Choose the game universe for</h1>
-    
-    <div class="boxes-homepage">
-        <div class="box1">
-            <a href="products.html"><img src="img/pc.PNG" alt="pc"></a>
+        <div class="product">
+            <img src="img/example.JPG" alt="big image" class="big">
+            <img src="img/example.JPG" alt="small image" class="small">
+            <img src="img/example.JPG" alt="small image" class="small">
+            <img src="img/example.JPG" alt="small image" class="small">
         </div>
 
-        <div class="box2">
-            <a href="products.html"><img src="img/console.PNG" alt="console"></a>
+        <div class="prodname">
+            <h1>Product name</h1>
+            <h2>30$ USD</h2>
+            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+            <button onclick="location.href='checkout.html'"">Buy <i class="fas fa-shopping-cart"></i></button>
         </div>
 
-        <div class="box3">
-            <a href="products.html"><img src="img/vr.PNG" alt="vr"></a>
+        <div class="details">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla impedit repellendus error. Temporibus at officia obcaecati, repudiandae officiis omnis velit eligendi excepturi repellat hic corporis eos quibusdam quae voluptas sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, tempora porro cum culpa perspiciatis odio omnis natus enim quisquam est quibusdam. Possimus totam sed porro cupiditate consequatur nisi, eius maiores!</p>
+            <p><a href="#">Read reviews</a></p>
         </div>
 
-    </div>
+        <div class="seller">
+            <img src="img/profile.jpg" alt="seller">
+            <h2>Seller's name</h2>
+        </div>   
     </main>
-    </div>
+</div>
 
-    <section class="newsletter-container">
-    <aside class="exclamation"><i class="fas fa-exclamation-circle"></i></aside>
 
-    <div class="newsletter">
-        <h2>Sign up for our newsletter</h2>
-        <p>Stay up to date with our lastest news and product deals</p>
-
-        <form>
-            <input type="text" placeholder="Your email adress..." name="mail" required>
-            <button>Sign up</button>
-        </form>
-    </div>
-    </section>
-
-    <div class="footer-container">
+<div class="footer-container">
     <footer>
         <ul>
             <li><a href="#">About us</a></li>
@@ -99,6 +94,7 @@
         <p>Copyright license &copy; Game Hub 2020</p>
     </footer>
     </div>
+
 
 </body>
 </html>

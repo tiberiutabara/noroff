@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GameHub | Homepage</title>
+    <title>GameHub | Checkout</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="checkout.css">
     <script
     src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
@@ -41,42 +41,60 @@
         </ul>
     </nav>
 
-    <div class="main-container">
+<div class="main-container">
     <main>
-        <h1>Choose the game universe for</h1>
-    
-    <div class="boxes-homepage">
-        <div class="box1">
-            <a href="products.html"><img src="img/pc.PNG" alt="pc"></a>
+        <div class="payment">
+            <h2>Payment method</h2>
+            <p>Card number</p>
+            <input type="text" class="big" placeholder="xxx xxx xxx xxx">
+            <p>Card details</p>
+            <input type="text" class="small" placeholder="Month">
+            <input type="text" class="small" placeholder="Day">
+            <input type="text" class="small" placeholder="CVC">
         </div>
 
-        <div class="box2">
-            <a href="products.html"><img src="img/console.PNG" alt="console"></a>
+        <div class="products">  
+            <p>Selected products</p>
+            <img src="img/example.JPG" alt="prod">
+            <img src="img/example.JPG" alt="prod">
+            <img src="img/example.JPG" alt="prod">
+            <img src="img/example.JPG" alt="prod">
         </div>
 
-        <div class="box3">
-            <a href="products.html"><img src="img/vr.PNG" alt="vr"></a>
+        <div class="placement">
+            <h2>Your order</h2>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Total</th>
+                </tr>
+                <tr class="underlined">
+                    <td>Name</td>
+                    <td>10$</td>
+                </tr>
+                <tr class="underlined">
+                    <td>Name</td>
+                    <td>10$</td>
+                </tr>
+                <tr class="underlined">
+                    <td>Name</td>
+                    <td>10$</td>
+                </tr>
+                <tr class="underlined">
+                    <td>Name</td>
+                    <td>10$</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>40$</td>
+                </tr>
+            </table>
+            <button onclick="location.href='success.html'">Place order</button>
         </div>
-
-    </div>
     </main>
-    </div>
+</div>
 
-    <section class="newsletter-container">
-    <aside class="exclamation"><i class="fas fa-exclamation-circle"></i></aside>
-
-    <div class="newsletter">
-        <h2>Sign up for our newsletter</h2>
-        <p>Stay up to date with our lastest news and product deals</p>
-
-        <form>
-            <input type="text" placeholder="Your email adress..." name="mail" required>
-            <button>Sign up</button>
-        </form>
-    </div>
-    </section>
-
-    <div class="footer-container">
+<div class="footer-container">
     <footer>
         <ul>
             <li><a href="#">About us</a></li>

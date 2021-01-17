@@ -1,0 +1,48 @@
+.products img{
+    height: 130px;
+    margin: 5px;
+}
+
+.products p{
+    margin: 15px;
+}
+
+.products{
+    margin-bottom: 40px;
+}
+
+.middle{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main{
+    margin: 40px;
+}
+
+h1{
+    color: #020659;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: #020659;
+    margin-bottom: 20px;
+}
+
+h3 a{
+    color: blue;
+}
+
+h3{
+    margin: 40px;
+    text-align: center;
+}
+
+@media (max-width: 1000px){
+    .middle{
+        width: 100%;
+    }
+}

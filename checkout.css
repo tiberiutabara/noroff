@@ -1,0 +1,83 @@
+.products img{
+    height: 130px;
+    margin: 5px;
+}
+
+.products p{
+    margin: 15px;
+}
+
+.payment{
+    grid-area: payment;
+    margin: 40px;
+}
+
+.big, .small{
+    font-size: 22px;
+    margin: 5px;
+    padding: 3px;
+}
+
+.big{
+    width: 270px;
+}
+
+.small{
+    width: 80px;
+}
+
+.products{
+    grid-area: products;
+    margin: 40px;
+}
+
+.placement{
+    grid-area: placement;
+    margin: 40px;
+    background-color: #F2F2F2;
+    width: 300px;
+    text-align: center;
+}
+
+.placement h2{
+    margin: 30px;
+}
+
+.placement table{
+    margin: 20px auto;
+}
+
+.placement button{
+    margin: 20px;
+}
+
+table th{
+    padding: 20px;
+}
+
+table td{
+    padding: 5px;
+}
+
+.underlined td{
+    border-bottom: 1px solid gray;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "payment placement"
+        "products placement";
+}
+
+@media (max-width: 900px){
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "payment"
+        "products"
+        "placement";
+    }
+}

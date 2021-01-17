@@ -1,0 +1,42 @@
+.bloggpost img{
+    grid-area: img;
+    height: 8em;
+    margin-right: 2em;
+}
+
+.bloggpost h2{
+    grid-area: head;
+    color: #020659;
+}
+
+.bloggpost p{
+    grid-area: para;
+}
+
+.bloggpost a{
+    grid-area: link;
+    margin-left: 2em;
+}
+
+.bloggpost{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    grid-template-areas:
+    "img head head"
+    "img para link";
+}
+
+@media (max-width: 950px){
+    .bloggpost{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: none;
+    }
+
+    .bloggpost img, .bloggpost a, .bloggpost p, .bloggpost h2{
+        grid-area: auto;
+    }
+}
