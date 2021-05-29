@@ -7,48 +7,57 @@
     margin-bottom: 8px;
 }
 
-h1{
-    color: #1D2540;
-    text-align: center;
-    margin-bottom: 50px;
+.form-container {
+    max-width: 760px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
-form{
+form {
+    padding: 2em;
+    color: white;
+    border-radius: 1rem;
     background-color: #1D2540;
-    font-size: 34px;
-    padding: 15px;
-    width: 70%;
-    margin: 25px auto;
 }
 
-form button{
-    margin-left: 20%;
+input {
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 16px;
 }
 
-textarea{
-    font-size: 22px;
-    margin: 20px;
-    max-width: 90%;
-    padding: 3px;
+button {
+    background: #fff;
+    border: 1px solid black;
+    width: 180px;
+    padding: 12px;
+    color: black;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    font-size: 16px;
 }
 
-.title{
-    font-size: 22px;
-    padding: 3px;
-    margin: 20px;
-    margin-bottom: 20px;
-    max-width: 90%;
+button:hover{
+    font-size: 20px;
 }
 
-.email{
-    font-size: 22px;
-    padding: 3px;
-    margin: 20px;
-    margin-bottom: 5px;
-    max-width: 90%;
+label {
+    display: block;
+    margin-top: 1rem;
 }
 
-.title, button{
-    display: inline;
+.form-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
 }
 
+.form-success {
+    display: none;
+    color: green;
+    text-align: center;
+    margin-bottom: 15px;
+}
